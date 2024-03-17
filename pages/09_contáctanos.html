@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/misEstilos.css">
+</head>
+<body>
+    <div class="contenedor-grid">
+        <header>
+            <div class="contacto-header">
+                <img id="correo" src="../img/envelope-solid.svg" alt=""> <h3>&nbsp&nbspcontacto@devconsulting.com&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+                <img id="celular" src="../img/phone-flip-solid.svg" alt=""> <h3>&nbsp&nbsp987 654 321&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+                <img id="carrito" src="../img/carrito.png" alt=""> <h3>&nbsp&nbspCarrito</h3>               
+            </div>
+        </header>
+        <nav>
+                <a href="../index.html"><img src="../img/logo.png" class="logo" alt="LOGO"></a>
+
+                <div class="bars_menu">
+                    <span class="line1_menu"></span>
+                    <span class="line2_menu"></span>
+                    <span class="line3_menu"></span>
+                </div>            
+
+                <div class="navBar">    <!--navbar-->
+                    <ul>    <!-- ul>li*7>a[href="#"]{Texto $} -->
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li>
+                            <a href="#">Nosotros</a>
+                            <ul class="menu-vertical1">
+                                <li><a href="../pages/02_acerca de SuculentGame.html">Acerca de SuculentGame</a></li>
+                                <li><a href="../pages/03_misión vision y valores.html">Misión, Visión y Valores</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Productos</a>
+                            <ul class="menu-vertical2">
+                                <li><a href="../pages/04_postres.html">Postres Temáticos</a></li>
+                                <li><a href="../pages/05_bebidas.html">Bebidas Fresh</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Juegos</a>
+                            <ul class="menu-vertical3">
+                                <li><a href="../pages/06_consolas.html">Consolas y Arcades</a></li>
+                                <li><a href="../pages/07_videoGames.html">VideoGames</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../pages/08_trabaja con nosotros.html">Trabaja con Nosotros</a></li>
+                        <li><a href="../pages/09_contáctanos.html">Contáctanos</a></li>
+                        <li><a href="../pages/10_login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                
+                <script src="../js/script.js"></script>
+        </nav>
+        
+        <article>
+            <div class="form-contactanos">
+                <form autocomplete="on">
+                    <label for="name">Nombre: (*)</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="surname">Apellidos: (*)</label><br>
+                    <input type="text" id="surname" name="surname"><br><br>
+                    <label for="birthday">Fecha de nacimiento: (*)</label><br>
+                    <input type="date" id="birthday" name="birthday" min="1900-01-01"><br><br>
+                    <label for="tmail">Correo: (*)</label><br>
+                    <input type="text" id="tmail" name="tmail">
+                    <label for="smail"></label>
+                    <select id="smail" name="smail">
+                        <option value="Gmail">@gmail.com</option>
+                        <option value="Hotmail">@hotmail.com</option>
+                        <option value="Outlook">@outlook.com</option>
+                        <option value="Yahoo">@yahoo.com</option>
+                        <option value="YahooES">@yahoo.es</option>
+                        <option value="Terra">@terra.com</option>
+
+                    </select>
+                    <br><br>
+                    <label for="tnumber">Número de Contacto: (*)</label><br>
+                    <input type="tel" id="tnumber" name="tnumber" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+                    <label for="hobbies">Juegos de preferencia:</label><br>
+                    <input type="checkbox" id="hb1" name="hb1" value="Music">
+                    <label for="hb1">RPG</label><br>
+                    <input type="checkbox" id="hb2" name="hb2" value="Movie">
+                    <label for="hb2">Shooter</label><br>
+                    <input type="checkbox" id="hb3" name="hb3" value="Voleyball">
+                    <label for="hb3">Mundo abierto</label><br>
+                    <input type="checkbox" id="hb4" name="hb4" value="Soccer">
+                    <label for="hb4">Fútbol</label><br>
+                    <input type="checkbox" id="hb5" name="hb5" value="Other">
+                    <label for="hb5">Baile</label><br>
+                    <input type="checkbox" id="hb6" name="hb6" value="Other">
+                    <label for="hb6">Otro</label><br><br>
+            
+                    <label for="gender">Sexo:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Masculino</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Femenino</label><br><br>
+            
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <br><br>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.3145267168377!2d-77.03614798162765!3d-12.082250208687492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c95b585c014d%3A0x62d21b3e37bcbca9!2sCentro%20Comercial%20Arenales!5e0!3m2!1ses-419!2spe!4v1703290063579!5m2!1ses-419!2spe" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <p class="text-contactanos">Av. Gral. Antonio Álvarez de Arenales 1737, Lince - Int. 999</p>
+            <br>
+        </article>
+
+        <aside>
+            <div class="horario">
+                <h2>Horarios de atención:</h2><br>
+                <ul>
+                    <li>Martes a sábado: 9am - 10pm</li>
+                    <li>Domingos y feriados 9am - 8pm</li>
+                </ul><br>
+            </div>
+            <div class="patrocinadores">
+                <h2>Nuestros patrocinadores:</h2>
+                <img src="../img/hostelmarkt.png" alt="">
+                <img src="../img/kitchenAid.png" alt="">
+                <img src="../img/oster.png" alt="">
+                <img src="../img/nintendo.png" alt="">
+                <img src="../img/xbox.png" alt="">
+            </div>
+        </aside>
+
+        <footer>
+            <span class="social-media">
+                <a href="#"><img src="../img/facebook.png" alt=""></a>
+                <a href="#"><img src="../img/instagram.png" alt=""></a>
+                <a href="#"><img src="../img/youtube.png" alt=""></a>
+                <a href="#"><img src="../img/twitter.png" alt=""></a>
+            </span>
+            
+            <h3>Copyright 2023 © DevConsulting</h3>
+       
+        </footer>
+    </div>
+</body>
+</html>
